@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfSchedule.XForms;assembly=Syncfusion.SfSchedule.XForms"
+             xmlns:local="clr-namespace:ScheduleGettingStarted"
+             xmlns:chat="clr-namespace:Syncfusion.XForms.Chat;assembly=Syncfusion.SfChat.XForms"
+             x:Class="ScheduleGettingStarted.SchedulerPage">
+
+    <ContentPage.BindingContext>
+        <local:SchedulerViewModel x:Name="viewModel"/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout x:Name="stack" Orientation="Horizontal">
+            <syncfusion:SfSchedule x:Name="schedule" 
+                                   HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+        DataSource = "{Binding Meetings}"
+        ScheduleView = "WeekView"
+                                   >
+                
+                
+                <syncfusion:SfSchedule.AppointmentMapping>
+                <syncfusion:ScheduleAppointmentMapping
+                ColorMapping="Color"
+                EndTimeMapping="To"
+                StartTimeMapping="From"
+                SubjectMapping="EventName"
+                IsAllDayMapping="AllDay"/>
+            </syncfusion:SfSchedule.AppointmentMapping>
+        </syncfusion:SfSchedule>
+
+            <chat:SfChat x:Name="sfChat" CurrentUser="{Binding CurrentUser}" Messages="{Binding Messages}" MessageShape="DualTearDrop">
+            </chat:SfChat>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
