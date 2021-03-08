@@ -144,7 +144,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Bot.Connector">
-      <Version>4.7.1</Version>
+      <Version>4.7.3</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.0.1" />
     <PackageReference Include="Syncfusion.Xamarin.SfChat">
