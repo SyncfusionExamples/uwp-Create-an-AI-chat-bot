@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Bot.Connector" Version="4.7.1" />
+    <PackageReference Include="Microsoft.Bot.Connector" Version="4.7.3" />
     <PackageReference Include="Syncfusion.Xamarin.SfChat" Version="17.4.0.44" />
     <PackageReference Include="Syncfusion.Xamarin.SfSchedule" Version="17.4.0.44" />
     <PackageReference Include="Xamarin.Forms" Version="3.6.0.344457" />
