@@ -90,7 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Bot.Connector">
-      <Version>4.7.1</Version>
+      <Version>4.7.3</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfChat">
       <Version>17.4.0.44</Version>
